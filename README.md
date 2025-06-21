@@ -1,6 +1,6 @@
 # Prez's Dotfiles (WIP WILL DELETE THIS WHEN INSTALL SCRIPT IS READY) 
 
-> Modular dotfiles setup for developers who live in the terminal — shout out to [GNU Stow](https://www.gnu.org/software/stow/) designed for my Fedora 42 dev environment.
+> Modular dotfiles setup for developers who live in the terminal — shout out to [GNU Stow](https://www.gnu.org/software/stow/) — designed for my Fedora 42 dev environment.
 
 ---
 

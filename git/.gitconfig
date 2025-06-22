@@ -1,5 +1,48 @@
 [user]
 	email = 154857421+P-R-E-Z@users.noreply.github.com
 	name = P-R-E-Z
+
 [credential]
 	helper = store
+
+[core]
+	whitespace = error
+	preloadindex = true
+
+[init]
+	defaultBranch = main
+
+[status]
+	branch = true
+	showStash = true
+
+[diff]
+	interHunkContext = 10
+
+[interactive]
+	singlekey = true
+
+[push]
+	autoSetupRemote = true
+	default = current
+	followTags = true
+
+[pull]
+	default = current
+	rebase = true
+
+[rebase]
+	autoStash = true
+	missingCommitsCheck = warn
+
+[color "decorate"]
+	HEAD = red
+	branch = blue
+	tag = yellow
+	remoteBranch = magenta
+
+[branch]
+	sort = -committerdate
+
+[tag]
+	sort = -taggerdate

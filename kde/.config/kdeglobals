@@ -98,7 +98,7 @@ XftSubPixel=none
 font=MesloLGS NF,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [Icons]
-Theme=Zafiro-Icons-Dark
+Theme=Zafiro-Nord-Dark-Black
 
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop

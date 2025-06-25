@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+exec php "/home/prez/.local/share/nvim/mason/packages/phpactor/phpactor.phar" "$@"

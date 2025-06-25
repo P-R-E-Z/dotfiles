@@ -1,8 +1,7 @@
 # main settings here, will be making this more module soon!
 
-# Sourcing ZSH Modular files
-[ -f "~/.zshrc.d/aliases" ] && source "~/.zshrc.d/aliases"
-[ -f "~/.zshrc.d/functions" ] && source "~/.zshrc.d/functions"
+# Disable shell session management
+export SHELL_SESSIONS_DISABLE=1
 
 # Modules
 zmodload zsh/complist
@@ -63,11 +62,6 @@ source $ZSH/oh-my-zsh.sh
    export EDITOR='neovim'
  fi
 
-# Run fastfetch on startup if installed
-if command -v fastfetch >/dev/null 2>&1; then
-	fastfetch
-fi
-
 # Plugins
 plugins=(
   git
@@ -90,3 +84,10 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # OMP Prompt Init
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/base.json)"
+
+# Source .zshrc.d
+while read -rd $'\0' file; do
+  source "${file}"
+done < <(find -L "${HOME}/.zshrc.d" -mindepth 1 -maxdepth 1 -name '*.sh' -type f -print0 | LC_ALL=C sort -z)
+
+fastfetch

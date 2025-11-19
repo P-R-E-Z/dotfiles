@@ -27,3 +27,4 @@ fonts/**/*.woff*
 /packages/*.rpm
 /build/
 neovim/.local/share/nvim/lazy
+.git
